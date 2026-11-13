@@ -59,15 +59,14 @@ header .userIcon:hover{
 /*navigation bar*/
 .navigation-bar {
   background-color: #f0e7f6;
-  width: 16%;
+  width: 10%;
   height: 100vh;
-  padding: 5px;
+  padding: 8px;
 }
 
 .navigation-bar ul{
   list-style-type: none; /*removes bullet points*/
   padding: 0px;
-  
 }
 
 .navigation-bar a{
@@ -80,4 +79,25 @@ header .userIcon:hover{
 
 .navigation-bar a:hover{
   background-color: #d5b1f3;
+}
+
+/*Main-page*/
+.main-page{
+  display: flex;
+  width: 100%;
+  /*min-height: 100vh;*/
+}
+
+.main-content{
+  flex: 1;
+}
+
+.dashboard-content{
+  padding: 20px;
+}
+
+.welcome-message{
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
 }
