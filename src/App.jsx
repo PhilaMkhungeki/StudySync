@@ -1,6 +1,9 @@
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import Dashboard from "./components/Dashboard"
+import Sessions from "./components/Sessions"
+import AddSession from "./components/AddSession"
+
 function App() {
 
   return (
@@ -10,7 +13,9 @@ function App() {
         <Navigation />
 
         <main className="main-content">
-          <Dashboard />
+          {/*<Dashboard /> */}
+          {/*<Sessions />*/}
+          <AddSession />
         </main>
         
       </div>

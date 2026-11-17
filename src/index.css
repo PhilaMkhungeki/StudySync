@@ -101,3 +101,87 @@ header .userIcon:hover{
   padding: 20px;
   text-align: center;
 }
+
+/* Sessions*/
+.sessionsHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.addSessionBtn{
+  height: 35px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.addSessionBtn:hover{
+  background-color: #fafaf7;
+}
+
+/*Add session form*/
+.formContainer {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+textarea {
+  resize: none;
+  width: 98%;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submitSessionBtn {
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #a291b7;
+  width: 25%;
+  font-size: 14px;
+}
+
+/*Session Card styling*/
+.sessionsCard {
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
