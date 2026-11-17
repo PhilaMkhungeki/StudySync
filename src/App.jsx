@@ -14,8 +14,8 @@ function App() {
 
         <main className="main-content">
           {/*<Dashboard /> */}
-          {/*<Sessions />*/}
-          <AddSession />
+          <Sessions />
+          {/*<AddSession />*/}
         </main>
         
       </div>

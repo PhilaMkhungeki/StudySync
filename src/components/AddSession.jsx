@@ -1,8 +1,7 @@
 /* Form for creating a session */
-
 import { useState } from "react";
 
-function AddSession(){
+function AddSession({onClose}){
 
     const [values, setValues] = useState({
         subject: '',
@@ -23,6 +22,7 @@ function AddSession(){
 
     return(
         <div className="formContainer">
+            <button type="button" onClick={onClose} className="closeFormBtn">X</button>
             <h3>Add a session!</h3>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="subject">Subject</label>

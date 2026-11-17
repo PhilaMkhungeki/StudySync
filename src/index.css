@@ -122,7 +122,7 @@ header .userIcon:hover{
 }
 
 /*Add session form*/
-.formContainer {
+/*.formContainer {
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 10px 20px;
@@ -130,7 +130,7 @@ header .userIcon:hover{
   text-align: center;
   margin: auto;
   margin-top: 20px;
-}
+}*/
 
 label {
   display: block;
@@ -177,6 +177,49 @@ select {
   width: 25%;
   font-size: 14px;
 }
+
+.submitSessionBtn:hover{
+  background-color: #61329ba1;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 29, 29, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+ /* width: min(90%, 600px);*/
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ddd;
+
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.closeFormBtn {
+  float: inline-end;
+  background-color: rgb(244, 88, 88);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.closeFormBtn:hover{
+  background-color: rgba(220, 64, 64, 0.76);;
+}
+
 
 /*Session Card styling*/
 .sessionsCard {
