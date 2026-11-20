@@ -46,6 +46,10 @@ header {
   justify-content:space-between;
 }
 
+header h1 {
+  text-shadow: 2px 2px 4px rgb(105, 50, 164);
+}
+
 header .userIcon {
   height: 40px;
   cursor: pointer;
@@ -78,7 +82,7 @@ header .userIcon:hover{
 }
 
 .navigation-bar a:hover{
-  background-color: #d5b1f3;
+  background-color: rgb(231, 194, 231);
 }
 
 /*Main-page*/
@@ -117,8 +121,12 @@ header .userIcon:hover{
   margin: 5px;
 }
 
+.sessionsHeader h3 {
+  color: rgb(94, 92, 92);
+}
+
 .addSessionBtn:hover{
-  background-color: #fafaf7;
+  background-color: #c2c2c1;
 }
 
 /*Add session form*/
@@ -217,7 +225,7 @@ select {
 }
 
 .closeFormBtn:hover{
-  background-color: rgba(220, 64, 64, 0.76);;
+  background-color: rgba(220, 64, 64, 0.76);
 }
 
 
@@ -225,6 +233,31 @@ select {
 .sessionsCard {
   border: 2px solid gray;
   border-radius: 10px;
+  background-color: rgb(231, 194, 231);
   margin: 10px;
-  padding: 8px;
+  margin-left: 30px;
+  padding: 12px;
+  width: 85%;
+  box-shadow: 0 0 14px rgb(66, 43, 87);
+}
+
+.sessionsCard h3 {
+  color: rgb(85, 84, 84);
+}
+
+.sessionsCard > .sessionStatus {
+  border-radius: 8px;
+  background-color: #876ba9;
+  color: #fff;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+
+.sessionsCard p {
+  color: rgb(43, 41, 41);
+}
+
+.sessionsCard span {
+  font-style: italic;
 }

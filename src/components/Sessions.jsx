@@ -5,6 +5,17 @@ import { useState } from "react";
 function Sessions() {
     
     const [isOpen, setIsOpen] = useState(false);
+    const [sessions, setSessions] = useState([]);
+
+    const handleAddSession = (newSession) => {
+
+        const sessionWithId = {
+            ...newSession,
+            id: Date.now()
+        };
+
+        setSessions(prevSessions => [...prevSessions, sessionWithId]);
+    };
 
     return(
         <>
@@ -16,13 +27,16 @@ function Sessions() {
             {isOpen && (
                 <div className="modalOverlay">
                     <div className="modalContent">
-                        <AddSession onClose={() => setIsOpen(false)}/>
+                        <AddSession onClose={() => setIsOpen(false)} addNewSession={handleAddSession}/>
                     </div>
                 </div>
                 
             )}
 
-            <SessionsCard />
+            {sessions.map(session => (
+                <SessionsCard key={session.id} session={session}/>
+            ))}
+            
         </>
     );
 }

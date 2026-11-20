@@ -1,11 +1,13 @@
 
-function SessionsCard(){
+function SessionsCard({session}){
 
     return(
         <div className="sessionsCard">
-            <h5>JavaScript Fundamentals</h5>
-            <p>Monday 10:00 - 11:00</p>
-            <p>Upcoming</p>
+            <h3>{session.subject}</h3>
+            <p>~{session.description}~</p>
+            <p><span>Date:</span> {session.date}</p>
+            <p><span>Start-Time:</span> {session.startTime}</p>
+            <p className="sessionStatus">{session.status}</p>
         </div>
     );
            
