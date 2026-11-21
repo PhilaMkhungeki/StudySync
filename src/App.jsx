@@ -26,7 +26,7 @@ function App() {
         <Navigation activePage={activePage} onNavigate={setActivePage}/>
 
         <main className="main-content">
-          {activePage === "dashboard" && <Dashboard />}
+          {activePage === "dashboard" && <Dashboard sessions={sessions}/>}
           {activePage === "sessions" && <Sessions sessions={sessions} addSession={handleAddSession}/>}
         
         </main>

@@ -114,6 +114,24 @@ header .userIcon:hover{
   text-align: center;
 }
 
+.totalSessionsCard {
+  background-color: rgb(231, 194, 231);
+  width: 25%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.totalSessionsCard h5 {
+  margin-top: 0px;
+}
+
+.totalSessionsCard p {
+  color: #4f4f4f;
+  font-size: 25px;
+  margin: 0px;
+}
+
 /* Sessions*/
 .sessionsHeader {
   display: flex;
@@ -138,15 +156,6 @@ header .userIcon:hover{
 }
 
 /*Add session form*/
-/*.formContainer {
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
-  width: 500px;
-  text-align: center;
-  margin: auto;
-  margin-top: 20px;
-}*/
 
 label {
   display: block;
