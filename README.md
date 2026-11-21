@@ -1,3 +1,7 @@
+# StudySync
+
+StudySync is meant to help students develop discipline and manage their study habits
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
