@@ -73,16 +73,24 @@ header .userIcon:hover{
   padding: 0px;
 }
 
-.navigation-bar a{
+.navigation-bar button{
   color: #08060d;
   text-decoration: none;
   padding: 15px;
   display: block;
   border-radius: 5px;
+  width: 90%;
+  margin: 8px;
+  font-size: 16px;
+  border: none;
 }
 
-.navigation-bar a:hover{
+.navigation-bar button:hover{
   background-color: rgb(231, 194, 231);
+}
+
+.navigation-bar button.active {
+    background-color: #a36ba9;
 }
 
 /*Main-page*/
@@ -245,7 +253,15 @@ select {
   color: rgb(85, 84, 84);
 }
 
-.sessionsCard > .sessionStatus {
+.sessionsCard p {
+  color: rgb(43, 41, 41);
+}
+
+.sessionsCard span {
+  font-style: italic;
+}
+
+.sessionsCard > .statusClass {
   border-radius: 8px;
   background-color: #876ba9;
   color: #fff;
@@ -254,10 +270,17 @@ select {
   text-align: center;
 }
 
-.sessionsCard p {
-  color: rgb(43, 41, 41);
+.upcoming {
+  /*background-color: rgb(242, 63, 63);*/
+  box-shadow: 0 0 14px rgb(242, 63, 63);
 }
 
-.sessionsCard span {
-  font-style: italic;
+.inProgress {
+  /*background-color: rgb(34, 34, 246);*/
+  box-shadow: 0 0 14px rgb(34, 34, 246);
+}
+
+.done {
+  /*background-color: rgb(33, 110, 33);*/
+  box-shadow: 0 0 14px rgb(33, 110, 33);
 }

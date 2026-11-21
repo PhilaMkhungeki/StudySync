@@ -44,6 +44,7 @@ function AddSession({onClose, addNewSession}){
 
                     <label htmlFor="status">Status</label>
                     <select name="status" id="status" value={values.status} onChange={handleChanges}>
+                        <option value="">--Select--</option>
                         <option value="Upcoming">Upcoming</option>
                         <option value="In-progress">In-progress</option>
                         <option value="Done">Done</option>
