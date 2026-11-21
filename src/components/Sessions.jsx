@@ -2,20 +2,9 @@ import SessionsCard from "./SessionsCard";
 import AddSession from "./AddSession";
 import { useState } from "react";
 
-function Sessions() {
+function Sessions({sessions, addSession}) {
     
     const [isOpen, setIsOpen] = useState(false);
-    const [sessions, setSessions] = useState([]);
-
-    const handleAddSession = (newSession) => {
-
-        const sessionWithId = {
-            ...newSession,
-            id: Date.now()
-        };
-
-        setSessions(prevSessions => [...prevSessions, sessionWithId]);
-    };
 
     return(
         <>
@@ -27,7 +16,7 @@ function Sessions() {
             {isOpen && (
                 <div className="modalOverlay">
                     <div className="modalContent">
-                        <AddSession onClose={() => setIsOpen(false)} addNewSession={handleAddSession}/>
+                        <AddSession onClose={() => setIsOpen(false)} addNewSession={addSession}/>
                     </div>
                 </div>
                 

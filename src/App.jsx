@@ -7,6 +7,17 @@ import { useState } from "react"
 function App() {
 
   const [activePage, setActivePage] = useState("dashboard");
+  const [sessions, setSessions] = useState([]);
+
+  const handleAddSession = (newSession) => {
+
+        const sessionWithId = {
+            ...newSession,
+            id: Date.now()
+        };
+
+        setSessions(prevSessions => [...prevSessions, sessionWithId]);
+  };
 
   return (
     <>
@@ -16,7 +27,7 @@ function App() {
 
         <main className="main-content">
           {activePage === "dashboard" && <Dashboard />}
-          {activePage === "sessions" && <Sessions />}
+          {activePage === "sessions" && <Sessions sessions={sessions} addSession={handleAddSession}/>}
         
         </main>
         
